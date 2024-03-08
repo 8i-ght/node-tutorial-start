@@ -1,19 +1,9 @@
-const os = require('os');
+const http = require('http');
 
-// info about current user
-const user = os.userInfo();
-console.log(user);
+const server = http.createServer((req, res) => {
 
-// method returns the system uptime in seconds 
-console.log(`The System Uptime is ${os.uptime()} seconds`);
+})
 
-const currentOS = {
-    name: os.type(),
-    release: os.release(),
-    totalMem: os.totalmem(),
-    freeMem: os.freemem()
-}
+server.listen(5000);
 
-console.log(currentOS);
-
-// Video 1: 52:36
+// Video 1: 1:27:16
